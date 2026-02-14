@@ -1,68 +1,40 @@
-Apache License
-Version 2.0, January 2004
-http://www.apache.org/licenses/
+Copyright (c) 2026 Alex Aviles. Todos los derechos reservados.
 
-TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+LICENCIA PROPIETARIA
 
-1. Definitions.
-   "License" shall mean the terms and conditions for use, reproduction,
-   and distribution as defined by Sections 1 through 9 of this document.
+Este software y su código fuente son propiedad exclusiva de Alex Aviles
+(en adelante, "el Propietario").
 
-   "Licensor" shall mean the copyright owner or entity authorized by
-   the copyright owner that is granting the License.
+ESTÁ ESTRICTAMENTE PROHIBIDO:
 
-   "Legal Entity" shall mean the union of the acting entity and all
-   other entities that control, are controlled by, or are under common
-   control with that entity.
+1. Copiar, reproducir o duplicar este software, en su totalidad o en parte.
+2. Modificar, adaptar o crear obras derivadas basadas en este software.
+3. Distribuir, sublicenciar, vender o transferir este software a terceros.
+4. Realizar ingeniería inversa, descompilar o desensamblar este software.
+5. Utilizar este software con fines comerciales sin autorización escrita.
+6. Publicar o divulgar este código fuente en cualquier medio.
 
-   "You" (or "Your") shall mean an individual or Legal Entity
-   exercising permissions granted by this License.
+PROPIEDAD INTELECTUAL:
 
-2. Grant of Copyright License.
-   Subject to the terms and conditions of this License, each Contributor
-   hereby grants to You a perpetual, worldwide, non-exclusive, no-charge,
-   royalty-free, irrevocable copyright license to reproduce, prepare
-   Derivative Works of, publicly display, publicly perform, sublicense,
-   and distribute the Work and such Derivative Works in Source or Object form.
+Todo el código fuente, documentación, diseño, arquitectura y demás
+materiales incluidos en este repositorio son propiedad intelectual
+exclusiva del Propietario y están protegidos por las leyes de derechos
+de autor aplicables.
 
-3. Grant of Patent License.
-   Subject to the terms and conditions of this License, each Contributor
-   hereby grants to You a perpetual, worldwide, non-exclusive, no-charge,
-   royalty-free, irrevocable (except as stated in this section) patent license
-   to make, have made, use, offer to sell, sell, import, and otherwise
-   transfer the Work.
+CONFIDENCIALIDAD:
 
-4. Redistribution.
-   You may reproduce and distribute copies of the Work or Derivative Works
-   thereof in any medium, with or without modifications, provided that You
-   meet the following conditions:
+Este software contiene información confidencial y secretos comerciales
+del Propietario. Cualquier persona que tenga acceso a este software
+se compromete a mantener su confidencialidad.
 
-   (a) You must give any other recipients of the Work a copy of this License;
-   (b) You must cause any modified files to carry prominent notices stating
-       that You changed the files;
-   (c) You must retain, in the Source form of any Derivative Works that You
-       distribute, all copyright, patent, trademark, and attribution notices;
-   (d) If the Work includes a "NOTICE" text file, any Derivative Works that You
-       distribute must include a readable copy of the attribution notices.
+EXCLUSIÓN DE GARANTÍA:
 
-5. Submission of Contributions.
-   Unless You explicitly state otherwise, any Contribution intentionally
-   submitted for inclusion in the Work shall be under the terms of this License.
+Este software se proporciona "tal cual", sin garantía de ningún tipo,
+expresa o implícita.
 
-6. Trademarks.
-   This License does not grant permission to use the trade names, trademarks,
-   service marks, or product names of the Licensor.
+JURISDICCIÓN:
 
-7. Disclaimer of Warranty.
-   The Work is provided on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS
-   OF ANY KIND, either express or implied.
+Cualquier disputa relacionada con este software se resolverá bajo las
+leyes de la República de El Salvador.
 
-8. Limitation of Liability.
-   In no event and under no legal theory shall any Contributor be liable for
-   damages arising from the use of the Work.
-
-9. Accepting Warranty or Additional Liability.
-   While redistributing the Work, You may choose to offer support or warranty
-   obligations, but only on Your own behalf.
-
-END OF TERMS AND CONDITIONS
+Para consultas sobre licenciamiento, contactar directamente al Propietario.
