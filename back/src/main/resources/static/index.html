@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Portal | Aviles el Pro</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #e67e22;
+            --bg: #f8f9fa;
+            --card-bg: #ffffff;
+            --code-bg: #2d3436;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg);
+            color: #444;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 650px;
+            perspective: 1000px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+            border: 1px solid rgba(0, 0, 0, 0.03);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 2.2rem;
+            letter-spacing: -1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #7f8c8d;
+            margin-bottom: 2rem;
+        }
+
+        .badge {
+            background: var(--accent);
+            color: white;
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+
+        /* Sección de API mejorada */
+        .api-section {
+            background: var(--code-bg);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            text-align: left;
+            position: relative;
+        }
+
+        .api-section h2 {
+            color: #fab1a0;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 0.5rem;
+        }
+
+        code {
+            display: block;
+            color: #00cec9;
+            font-family: 'Fira Code', 'Courier New', monospace;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .endpoint::before {
+            content: "GET";
+            color: #55efc4;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .footer {
+            margin-top: 2rem;
+            font-size: 0.85rem;
+            color: #bdc3c7;
+        }
+
+        .license {
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        .github {
+            color: #00cec9;
+            font-weight: bold;
+        }
+
+        .github:hover {
+            color: #38e835;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card">
+            <span class="badge">Master Dev</span>
+            <h1>¡Bienvenido a la Demo!</h1>
+            <p class="subtitle">Infraestructura de pruebas para servicios web.</p>
+
+            <p>Creado por: <strong>Aviles el Pro</strong></p>
+
+            <div class="api-section">
+                <h2>API Documentation Endpoints</h2>
+                <code>
+                    <div class="endpoint">http://localhost:8080/swagger-ui.html</div>
+                </code>
+            </div>
+            <div class="api-section">
+                <h2>Api creada por Aviles el Pro</h2>
+                <code>
+                    <a href="https://github.com/alkeys" target="_blank" class="github">https://github.com/alkeys</a>
+                </code>
+            </div>
+
+            <p style="font-size: 0.95rem;">¿Sugerencias? Envía un pull request o reporta el issue.</p>
+
+            <div class="footer">
+                <p>Licencia: <span class="license">Apache 2.0</span> | &copy; 2026</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
