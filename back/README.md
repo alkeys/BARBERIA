@@ -1,58 +1,87 @@
-# Hola - Proyecto de Demostración de Spring Boot
+# 💈 Sistema de Gestión de Barbería (Backend)
 
-## Descripción
+Bienvenido al backend del Sistema de Gestión de Barbería. Esta aplicación robusta y escalable está construida con **Spring Boot** y diseñada para administrar eficientemente las operaciones diarias de una barbería moderna.
 
-Este es un proyecto de demostración para Spring Boot. Incluye funcionalidades para la autenticación de usuarios y control de acceso basado en roles usando JWT (JSON Web Tokens). También incluye documentación de la API usando Swagger.
+## 🚀 Características Principales
 
-## Prerrequisitos
+- **Gestión de Usuarios y Seguridad**:
+  - Autenticación segura mediante **JWT (JSON Web Tokens)**.
+  - Control de acceso basado en roles (Admin, Barbero, Cliente).
+- **Gestión de Citas**:
+  - Programación, reprogramación y cancelación de citas.
+  - Validación de disponibilidad de barberos.
+- **Gestión de Catálogos**:
+  - **Barberos**: Administración de perfiles, horarios y disponibilidad.
+  - **Clientes**: Registro e historial de clientes.
+  - **Servicios**: Configuración de precios, duración y descripciones.
+- **Documentación API**:
+  - Interfaz interactiva con **Swagger UI** para probar endpoints.
 
-*   Java 25
-*   Maven
-*   Docker
+## 🛠️ Tecnologías Utilizadas
 
-## Instalación
+- **Java 25**: Lenguaje de programación principal.
+- **Spring Boot 3.x**: Framework para el desarrollo de microservicios y aplicaciones web.
+- **Spring Data JPA / Hibernate**: Persistencia y ORM.
+- **PostgreSQL**: Base de datos relacional.
+- **Docker**: Contenedorización de la base de datos.
+- **Maven**: Gestión de dependencias.
+- **Lombok**: Reducción de código boilerplate.
 
-1.  Clona el repositorio:
+## 📂 Estructura del Proyecto
+
+El código está organizado siguiendo las mejores prácticas de arquitectura en capas:
+
+```
+src/main/java/com/aviles/pro/one/
+├── config/          # Configuraciones (Seguridad, Swagger, CORS)
+├── controllers/     # Controladores REST
+├── models/          # Entidades JPA (citas, clientes, servicios, users)
+├── repositories/    # Interfaces de acceso a datos
+├── services/        # Lógica de negocio
+└── dto/             # Objetos de Transferencia de Datos
+```
+
+## ⚙️ Configuración e Instalación
+
+### Prerrequisitos
+
+- Java 25
+- Maven
+- Docker y Docker Compose
+
+### Pasos para Ejecutar
+
+1.  **Clonar el repositorio:**
+
     ```bash
-    git clone https://github.com/tu-usuario/hola.git
-    ```
-2.  Navega al directorio del proyecto:
-    ```bash
-    cd hola
-    ```
-3.  Instala las dependencias:
-    ```bash
-    mvn install
+    git clone https://github.com/tu-usuario/barberia-backend.git
+    cd barberia-backend
     ```
 
-## Base de Datos con Docker
+2.  **Configurar la Base de Datos:**
+    Puedes iniciar una instancia de PostgreSQL usando Docker:
 
-Este proyecto utiliza PostgreSQL como base de datos. Se proporciona un archivo `docker-compose.yml` para facilitar la creación de la base de datos.
-
-1.  Asegúrate de tener Docker y Docker Compose instalados.
-2.  Ejecuta el siguiente comando para iniciar la base de datos:
     ```bash
     docker-compose up -d
     ```
 
-La base de datos se creará con el nombre `aviles`, el usuario `admin` y la contraseña `admin`. La propiedad `spring.jpa.hibernate.ddl-auto=update` en `application.properties` se encargará de crear las tablas automáticamente cuando la aplicación se inicie por primera vez.
+    > **Nota:** El esquema inicial de la base de datos se encuentra en `sql/base.sql`. Puedes ejecutar este script para crear las tablas manualmente si no usas `spring.jpa.hibernate.ddl-auto=update`.
 
-## Uso
+3.  **Configurar Variables de Entorno (Opcional):**
+    Revisa `src/main/resources/application.properties` para ajustar la conexión a la base de datos si es necesario.
 
-1.  Ejecuta la aplicación:
+4.  **Compilar y Ejecutar:**
     ```bash
+    mvn clean install
     mvn spring-boot:run
     ```
-2.  La aplicación se ejecutará en `http://localhost:8080`.
 
-## Documentación de la API
+## 📖 Documentación de la API
 
-La documentación de la API está disponible en `http://localhost:8080/swagger-ui.html`.
+Una vez que la aplicación esté en ejecución, puedes acceder a la documentación interactiva de la API en:
 
-## Construido con
+👉 [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
 
-*   [Spring Boot](https://spring.io/projects/spring-boot) - El framework web utilizado
-*   [Maven](https://maven.apache.org/) - Gestión de dependencias
-*   [PostgreSQL](https://www.postgresql.org/) - Base de datos
-*   [JWT](https://jwt.io/) - JSON Web Tokens
-*   [Swagger](https://swagger.io/) - Documentación de la API
+---
+
+Desarrollado con ❤️ para optimizar tu negocio.
