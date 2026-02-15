@@ -57,13 +57,7 @@ public class SecurityConfig {
                                                 // enpoint con autenticación para administradores
                                                 .requestMatchers(ListAuth.AUTH_BLACKLIST).hasRole("ADMIN")
 
-                                                // enpoint con autenticación para conductores
-                                                .requestMatchers(ListAuth.AUTH_BLACKLIST_COMBRADORES)
-                                                .hasRole("COBRADOR")
-
-                                                // enpoint con autenticación para manager
-                                                .requestMatchers(ListAuth.AUTH_BLACKLIST_MANAGER)
-                                                .hasRole("MANAGER")
+                
 
                                                 // enpoint con autenticación para multimedia
                                                 .requestMatchers(ListAuth.multimediaWhitelist).permitAll()
